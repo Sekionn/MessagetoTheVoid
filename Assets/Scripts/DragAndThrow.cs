@@ -37,7 +37,7 @@ public class DragAndThrow : MonoBehaviour
                         allowMove = true;
 
                         rigidBody.freezeRotation = true;
-                        rigidBody.velocity = new Vector2(0,0);
+                        rigidBody.linearVelocity = new Vector2(0,0);
                         rigidBody.gravityScale = 0;
                         GetComponent<CircleCollider2D>().sharedMaterial = null;
 
